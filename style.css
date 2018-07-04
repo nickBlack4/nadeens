@@ -29,6 +29,11 @@ body {
 
 }
 
+header {
+  display: inline;
+
+}
+
 header h2 {
   /* background: rgba(18,25,92, 0.6); */
   background: rgba(0,0,0, 0.6);
@@ -56,46 +61,34 @@ header h2 #hoverFix:hover {
   color: #FEC361;
 }
 
-#nav-container {
 
-  visibility: hidden; /* temp hide */
-  font-size: 0px;
-  background: rgba(200,100,100, 0.6);
-  padding: 20px;
-  width: 100%;
-  border: 0px solid white;
-  /* Centers li elements */
-  text-align: center;
-  border-bottom: solid 1px black;
+.nav-ul {
+  display: inline;
 
 }
 
 .nav-ul li {
-  background-color: skyblue;
-  opacity: 0.6;
-  font-size: 24px;
-  width: 100px;
-  height: 100px;
+
+  color: white;
+  opacity: 0.5;
+  font-size: 1.2em;
+
+
   display: inline;
-  border: solid black 2px;
-
-  text-align: center;
-  padding: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-
-  /* change font */
-  font-family: "courier new";
+  padding: 5px;
+  /* margin-left: 0px; */
+  /* margin-right: 0px; */
 }
 
+/*
 .nav-ul li:nth-child(even) {
   border-left: none;
-  /* background-color: blue; */
 }
-
 .nav-ul li:nth-child(3) {
   border-left: none;
 }
+
+*/
 
 .nav-ul li:hover {
    /* background-color: tomato; */
@@ -115,16 +108,5 @@ header h2 #hoverFix:hover {
   text-align: left;
   line-height: 1.5;
   font-family: cursive;
-
-}
-
-footer {
-  visibility: hidden; /* temp hide */
-  border-top: 1px solid black;
-    background: rgba(200,100,100, 0.9);
-    padding: 1px;
-    width: 100%;
-    margin-top: 0px;
-    padding-bottom: 0px;
 
 }
