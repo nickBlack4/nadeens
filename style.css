@@ -1,13 +1,15 @@
 body {
-  margin-top: 70px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
 
 
-  background-image: url("https://picsum.photos/2560x1440");
+  background-image: url("placeholder2.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  /* background-position: center center; */
+  /* have background fill container */
+  background-size: cover;
 
   /* gets rid of scroll bar and overflowed content div etc */
   overflow: hidden;
@@ -27,24 +29,21 @@ body {
 
 }
 
-#header-wrapper {
-  /* background: rgba(18,25,92,0.6); */
-  /* margin: 0 0 0 0; */
-
-}
-
 header h2 {
-  background: rgba(18,25,92, 0.6);
-  padding: 20px;
+  /* background: rgba(18,25,92, 0.6); */
+  background: rgba(0,0,0, 0.6);
+  /* using percentages to make values fluid (ideally) */
+  padding: 2.5%;
   width: 100%;
-  margin-bottom: 0px;
-  border: 0px solid white;
-  text-align: center;
+  margin-bottom: 0%;
+  /* border: 1px solid white; */
+  /* text-align: center; */
   font-size: 65px;
   margin-top: 0px;
   /* change font */
   font-family: 'hickory_jackregular';
-  text-shadow: 2px 2px #12195C;
+  /* text-shadow: 2px 2px #12195C; */
+  text-shadow: 2px 2px black;
   color: #F9FCC0;
   /* remove bold from heading */
   font-weight: normal;
@@ -53,10 +52,13 @@ header h2 {
 /* before I added span with id hoverFix, the whole header h2 block was
 being highlighted.  This corrected that so just the logo would highlight. */
 header h2 #hoverFix:hover {
-  color: #EFF253;
+  /* color: #EFF253; */
+  color: #FEC361;
 }
 
 #nav-container {
+
+  visibility: hidden; /* temp hide */
   font-size: 0px;
   background: rgba(200,100,100, 0.6);
   padding: 20px;
@@ -68,7 +70,7 @@ header h2 #hoverFix:hover {
 
 }
 
-.test li {
+.nav-ul li {
   background-color: skyblue;
   opacity: 0.6;
   font-size: 24px;
@@ -86,16 +88,16 @@ header h2 #hoverFix:hover {
   font-family: "courier new";
 }
 
-.test li:nth-child(even) {
+.nav-ul li:nth-child(even) {
   border-left: none;
   /* background-color: blue; */
 }
 
-.test li:nth-child(3) {
+.nav-ul li:nth-child(3) {
   border-left: none;
 }
 
-.test li:hover {
+.nav-ul li:hover {
    /* background-color: tomato; */
    opacity: 0.7;
    background-color: brown;
@@ -105,7 +107,7 @@ header h2 #hoverFix:hover {
 
 #main-container {
   margin-top: 0px;
-  padding: 5px;
+  padding: 100px;
   background: rgba(255,255,255, 0.5);
   padding-bottom: 20px;
   padding-left: 10px;
@@ -117,6 +119,7 @@ header h2 #hoverFix:hover {
 }
 
 footer {
+  visibility: hidden; /* temp hide */
   border-top: 1px solid black;
     background: rgba(200,100,100, 0.9);
     padding: 1px;
