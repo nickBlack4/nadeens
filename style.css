@@ -1,0 +1,127 @@
+body {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+
+
+  background-image: url("https://picsum.photos/2560x1440");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* gets rid of scroll bar and overflowed content div etc */
+  overflow: hidden;
+
+}
+
+/*
+  nadeen's logo font-face
+*/
+
+@font-face {
+    font-family: 'hickory_jackregular';
+    src: url('hickoryjack-webfont.woff2') format('woff2'),
+         url('hickoryjack-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#header-wrapper {
+  /* background: rgba(18,25,92,0.6); */
+  /* margin: 0 0 0 0; */
+
+}
+
+header h2 {
+  background: rgba(18,25,92, 0.6);
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 0px;
+  border: 0px solid white;
+  text-align: center;
+  font-size: 65px;
+  margin-top: 0px;
+  /* change font */
+  font-family: 'hickory_jackregular';
+  text-shadow: 2px 2px #12195C;
+  color: #F9FCC0;
+  /* remove bold from heading */
+  font-weight: normal;
+}
+
+/* before I added span with id hoverFix, the whole header h2 block was
+being highlighted.  This corrected that so just the logo would highlight. */
+header h2 #hoverFix:hover {
+  color: #EFF253;
+}
+
+#container {
+  font-size: 0px;
+  background: rgba(200,100,100, 0.6);
+  padding: 20px;
+  width: 100%;
+  border: 0px solid white;
+  /* Centers li elements */
+  text-align: center;
+  border-bottom: solid 1px black;
+
+}
+
+.test li {
+  background-color: skyblue;
+  opacity: 0.6;
+  font-size: 24px;
+  width: 100px;
+  height: 100px;
+  display: inline;
+  border: solid black 2px;
+
+  text-align: center;
+  padding: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  /* change font */
+  font-family: "courier new";
+}
+
+.test li:nth-child(even) {
+  border-left: none;
+  /* background-color: blue; */
+}
+
+.test li:nth-child(3) {
+  border-left: none;
+}
+
+.test li:hover {
+   /* background-color: tomato; */
+   opacity: 0.7;
+   background-color: brown;
+   /* text-transform: capitalize; */
+   cursor:help;
+}
+
+#main-container {
+  margin-top: 0px;
+  padding: 5px;
+  background: rgba(255,255,255, 0.5);
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  line-height: 1.5;
+  font-family: cursive;
+
+}
+
+footer {
+  border-top: 1px solid black;
+    background: rgba(200,100,100, 0.9);
+    padding: 1px;
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 0px;
+
+}
