@@ -1,19 +1,31 @@
 body {
+  background-color: #E3E1DB;
   cursor: default;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
   /* background-image: url("placeholder2.jpg"); */
+  /* background-image: url("placeholder1.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* have background fill container */
+  /* background-size: cover; */
+  /* gets rid of scroll bar and overflowed content div etc */
+  /* overflow: hidden; */
+}
+
+#bigWrapper {
+  margin-top: 2.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2.5%;
+  /* background-image: url("placeholder2.jpg"); */
   background-image: url("placeholder1.png");
   background-repeat: no-repeat;
   background-position: center center;
   /* have background fill container */
   background-size: cover;
-
-
-  /* gets rid of scroll bar and overflowed content div etc */
-  /* overflow: hidden; */
 }
 
 /*
@@ -69,7 +81,7 @@ nav {
    margin-left: auto;
    margin-right: auto;
    float:right;
-   margin-top: -2%;
+   margin-top: -3%;
 
    padding-right: 20px;
 
@@ -107,7 +119,7 @@ nav {
 
 #main-container {
   margin-top: 0px;
-  padding-top: 40px;
+  padding: 20px;
 
   background: rgba(255,255,255, 0.4);
   line-height: 1.3;
@@ -115,9 +127,15 @@ nav {
 
 }
 
-.foodPics {
-  display: inline-block;
+#imageContainer {
+  margin-top: 0px;
   width: 100%;
+}
+
+.foodPics {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* display: inline-block; */
   text-align: center;
   border-top: 2px solid black;
   background: rgba(0, 0, 0, 0.7);
@@ -129,6 +147,7 @@ nav {
   opacity: 0.8;
   width: 170px;
   height: 170px;
+
 }
 
 .foodPics img:hover {
