@@ -6,17 +6,62 @@
     <title>Nadeen's Hermitage Haven - Nashville, TN - 3410 Lebanon Pike Hermitage, TN 37076 - 615.873.1184</title>
     <style>
 
-      #information {
-        display: inline;
-        /* float: right; */
-      }
 
-      pre {
+      /* #main-container {
+       position: justify;
+        overflow: auto;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+ */
+      /* #information {
+        display: inline;
+        /* float: right;
+        } */
+
+      /* pre {
         display: inline;
         font-size: 1.1em;
-        /* text-align: center; */
+        /* text-align: center;
         float: right;
-        margin-right: 100px;
+        margin-right: auto;
+        margin-left: auto;
+      } */
+
+      #main-container {
+        height: auto;
+        width: auto;
+      }
+
+      #address {
+        display: inline;
+        float: left;
+        width: 49%;
+      }
+
+      #hours {
+        display: inline;
+        float: left;
+        width: 49%;
+      }
+
+      #map {
+        display: inline;
+        float: left;
+        width: 49%;
+      }
+
+      #map img {
+        width: auto;
+        height: auto;
+      }
+
+      #contact {
+        display: inline;
+        float: left;
+        width: 49%;
+
       }
 
 
@@ -44,19 +89,20 @@
       <main>
 
         <div id="main-container">
-          <h3></h3>
-          <p id="information">
-            <pre>
-              3410 Lebanon Pike
 
-              Hermitage, TN 37076
+          <!-- address and hours -->
 
-              615.873.1184
+          <p id="address">
+              3410 Lebanon Pike<br />
 
-              <a href="https://www.google.com/maps/dir//Nadeen%27s+Hermitage+Haven/data=!4m8!4m7!1m0!1m5!1m1!1s0x88646a5c838ae043:0x14644d5df4ea2dc4!2m2!1d-86.6287547!2d36.1889888" style="color: black; text-decoration: underline; font-size: 1.1em">Get directions</a>
-            </pre>
-            <br />
+              Hermitage, TN 37076<br />
 
+              615.873.1184<br />
+
+              <a href="https://www.google.com/maps/dir//Nadeen%27s+Hermitage+Haven/data=!4m8!4m7!1m0!1m5!1m1!1s0x88646a5c838ae043:0x14644d5df4ea2dc4!2m2!1d-86.6287547!2d36.1889888" style="color: black; text-decoration: underline; font-size: 1.1em">Get directions</a><br />
+          </p>
+
+          <p id="hours">
               <strong>Hours</strong><br />
               T-R: 9am - 10am <br />
               F: 9am - 11pm <br />
@@ -65,18 +111,40 @@
 
           </p>
 
-          <p>
-            <img src="staticmap.jpeg" alt="map" style="width: 300;; height: 300px">
+            <!-- map and contact form -->
+
+          <p id="map">
+            <img src="staticmap.jpeg" alt="map">
           </p>
+
+           <p id="contact">
+              <form method="post" action="acknowledge.php">
+
+       					<label for="name">Name:</label>
+       					<br />
+       					<input type="text" name="name" id="name">
+
+       					<br />
+
+       					<label for="email">Email:</label>
+       					<br />
+       					<input type="email" name="email" id="email">
+
+       					<br />
+
+       					<label for="comments">Comments:</label>
+       					<br />
+       					<textarea name="comment" id="comment"></textarea>
+
+       					<br />
+
+       					<input type="submit" name="send" value="Send Message">
+
+ 				       </form>
+             </p>
 
         </div>  <!-- main-container -->
       </main>
-
-
-
-
-
-    </div>
 
 
 
