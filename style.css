@@ -26,6 +26,7 @@ body {
   background-position: center center;
   /* have background fill container */
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*
@@ -59,7 +60,10 @@ header h2 {
   /* text-shadow: 2px 2px #12195C; */
   text-shadow: 2px 2px black;
   /* color: #F9FCC0; */
-  color: white;
+  /* color: white; */
+  /* color: #E8F0EF; */
+  color: #F2F2F2;
+
   /* remove bold from heading */
   font-weight: normal;
 
@@ -81,7 +85,7 @@ nav {
    margin-left: auto;
    margin-right: auto;
    float:right;
-   margin-top: -3%;
+   margin-top: -2.5%;
 
    padding-right: 20px;
 
@@ -98,6 +102,34 @@ nav {
 
 }
 
+a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+a:hover {
+   /* color: #CBF9F4; */
+   opacity: 1;
+   color: #B0E5DF;
+   text-decoration: none;
+   text-shadow: 1px 1px black;
+}
+
+a:visited {
+  color: white;
+  opacity: 0.8;
+}
+
+a:active {
+  color: #B0E5DF;
+  opacity 1;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+}
+
+
+
 /*
 .nav-ul li:nth-child(even) {
   border-left: none;
@@ -108,20 +140,10 @@ nav {
 
 */
 
-.nav-ul li:hover {
-   /* background-color: tomato; */
-   opacity: 0.9;
-   color: orange;
-   text-decoratioin: none;
-   text-shadow: 1px 1px black;
-
-}
-
 #main-container {
   margin-top: 0px;
   padding: 20px;
-
-  background: rgba(255,255,255, 0.4);
+  background: rgba(227,225,219, 0.8);
   line-height: 1.3;
   border-top: 3px solid black;
 
@@ -145,12 +167,16 @@ nav {
 .foodPics img {
   padding: 5px;
   opacity: 0.8;
-  width: 170px;
-  height: 170px;
+  /* width: 170px; */
+  /* height: 170px; */
+  width: 200px;
+  height: 200px;
+  /* box-shadow: 1px 1px 5px black; */
 
 }
 
 .foodPics img:hover {
   opacity: 1.0;
+  color: #CBF9F4;
 
 }
