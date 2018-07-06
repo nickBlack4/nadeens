@@ -7,62 +7,25 @@
     <style>
 
 
-      /* #main-container {
-       position: justify;
-        overflow: auto;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-      }
- */
-      /* #information {
-        display: inline;
-        /* float: right;
-        } */
 
-      /* pre {
-        display: inline;
-        font-size: 1.1em;
-        /* text-align: center;
-        float: right;
-        margin-right: auto;
-        margin-left: auto;
-      } */
 
-      #main-container {
-        height: auto;
-        width: auto;
-      }
+      .testContainer {
+        display: flex;
+        flex-direction: row;
 
-      #address {
-        display: inline;
-        float: left;
-        width: 49%;
-      }
+        justify-content: space-between
 
-      #hours {
-        display: inline;
-        float: left;
-        width: 49%;
-      }
-
-      #map {
-        display: inline;
-        float: left;
-        width: 49%;
-      }
-
-      #map img {
-        width: auto;
-        height: auto;
-      }
-
-      #contact {
-        display: inline;
-        float: left;
-        width: 49%;
 
       }
+
+      #addressHours {
+
+      }
+
+      #mapContact {
+
+      }
+
 
 
 
@@ -89,63 +52,79 @@
       <main>
 
         <div id="main-container">
+          <div class="testContainer">
 
-          <!-- address and hours -->
+            <!-- address and hours -->
 
-          <p id="address">
-              3410 Lebanon Pike<br />
+            <div id="#addressHours">
 
-              Hermitage, TN 37076<br />
+              <p id="address">
+                  3410 Lebanon Pike<br />
 
-              615.873.1184<br />
+                  Hermitage, TN 37076<br />
 
-              <a href="https://www.google.com/maps/dir//Nadeen%27s+Hermitage+Haven/data=!4m8!4m7!1m0!1m5!1m1!1s0x88646a5c838ae043:0x14644d5df4ea2dc4!2m2!1d-86.6287547!2d36.1889888" style="color: black; text-decoration: underline; font-size: 1.1em">Get directions</a><br />
-          </p>
+                  615.873.1184<br />
 
-          <p id="hours">
-              <strong>Hours</strong><br />
-              T-R: 9am - 10am <br />
-              F: 9am - 11pm <br />
-              S: 8am - 12am <br />
-              Sun: 80am - 3pm <br /><br />
+                  <a href="https://www.google.com/maps/dir//Nadeen%27s+Hermitage+Haven/data=!4m8!4m7!1m0!1m5!1m1!1s0x88646a5c838ae043:0x14644d5df4ea2dc4!2m2!1d-86.6287547!2d36.1889888" style="color: black; text-decoration: underline; font-size: 1.1em">Get directions</a><br />
+              </p>
 
-          </p>
+              <p id="hours">
+                  <strong>Hours</strong><br />
+                  T-R: 9am - 10am <br />
+                  F: 9am - 11pm <br />
+                  S: 8am - 12am <br />
+                  Sun: 80am - 3pm <br /><br />
+
+              </p>
+
+              <p id="contact">
+                 <form method="post" action="acknowledge.php">
+
+          					<label for="name">Name:</label>
+          					<br />
+          					<input type="text" name="name" id="name">
+
+          					<br />
+
+          					<label for="email">Email:</label>
+          					<br />
+          					<input type="email" name="email" id="email">
+
+          					<br />
+
+          					<label for="comments">Comments:</label>
+          					<br />
+          					<textarea name="comment" id="comment"></textarea>
+
+          					<br />
+
+          					<input type="submit" name="send" value="Send Message">
+
+    				      </form>
+                </p>
+
+
+
+        </div>
 
             <!-- map and contact form -->
 
-          <p id="map">
-            <img src="staticmap.jpeg" alt="map">
-          </p>
+          <div id="mapContact">
 
-           <p id="contact">
-              <form method="post" action="acknowledge.php">
+            <p id="map">
+              <img src="staticmap.jpeg" alt="map">
+            </p>
 
-       					<label for="name">Name:</label>
-       					<br />
-       					<input type="text" name="name" id="name">
 
-       					<br />
+           </div>
 
-       					<label for="email">Email:</label>
-       					<br />
-       					<input type="email" name="email" id="email">
-
-       					<br />
-
-       					<label for="comments">Comments:</label>
-       					<br />
-       					<textarea name="comment" id="comment"></textarea>
-
-       					<br />
-
-       					<input type="submit" name="send" value="Send Message">
-
- 				       </form>
-             </p>
+         </div> <!-- testContainer -->
 
         </div>  <!-- main-container -->
+
       </main>
 
+    </div>  <!-- big wrapper -->
 
 
   </body>
