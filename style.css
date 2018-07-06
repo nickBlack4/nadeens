@@ -108,17 +108,17 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-   /* color: #CBF9F4; */
-   opacity: 1;
-   color: #B0E5DF;
-   text-decoration: none;
-   text-shadow: 1px 1px black;
-}
-
 a:visited {
   color: white;
   opacity: 0.8;
+}
+
+a:hover {
+   /* color: #CBF9F4; */
+   opacity: 1;
+   color: white;
+   text-decoration: none;
+   text-shadow: 1px 1px black;
 }
 
 a:active {
