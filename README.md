@@ -1,3 +1,3 @@
 # nadeens
 
-this is a website for a friend's restaurant.  they are good people and so I'm helping them out and they are helping me out by giving me a reason to learn
+This is an html/css website I developed for a local restaurant in Nashville, TN.
